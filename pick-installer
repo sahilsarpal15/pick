@@ -48,11 +48,11 @@ if [ -z "$install_dir" ]; then
 fi
 
 log "Installing pick to $install_dir ..."
-git clone --recursive https://github.com/gevans/pick $install_dir
+git clone --recursive https://github.com/sahilsarpal15/pick $install_dir
 
 log "Adding pick to \`\$PATH\` in $profile ..."
 tee $profile >>/dev/null <<'EOF'
-# Added by `pick` (https://github.com/gevans/pick#readme):
+# Added by `pick` (https://github.com/sahilsarpal15/pick#readme):
 [ -d "/opt/pick/bin" ]   && PATH="/opt/pick/bin:$PATH"
 [ -d "$HOME/.pick/bin" ] && PATH="$HOME/.pick/bin:$PATH"
 EOF
