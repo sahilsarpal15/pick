@@ -43,7 +43,7 @@ if [ -z "$install_dir" ]; then
     profile="/etc/profile.d/pick.sh"
   else
     install_dir="$HOME/.pick"
-    profile="$HOME/.profile"
+    profile="$HOME/.zprofile"
   fi
 fi
 
